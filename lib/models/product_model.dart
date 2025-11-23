@@ -24,8 +24,32 @@ class ProductModel {
   });
 }
 
-List<ProductModel> demoPopularProducts = [
-  ProductModel(
+class ProductModel2 {
+  final String image, brand, highlightHeading, name, vendorId, vendorName, pId;
+  final double mrp;
+  final double? priceAfetDiscount, productRatings;
+  final int? dicountpercent;
+  final List? reviews, variations;
+
+  ProductModel2({
+    required this.image,
+    required this.pId,
+    required this.reviews,
+    required this.variations,
+    required this.vendorId,
+    required this.vendorName,
+    required this.brand,
+    required this.productRatings,
+    required this.name,
+    required this.highlightHeading,
+    required this.mrp,
+    this.priceAfetDiscount,
+    this.dicountpercent,
+  });
+}
+
+List<ProductModel2> demoPopularProducts = [
+  ProductModel2(
     variations: [],
     name: "",
     image: productDemoImg1,
@@ -40,7 +64,7 @@ List<ProductModel> demoPopularProducts = [
     priceAfetDiscount: 420,
     dicountpercent: 20,
   ),
-  ProductModel(
+  ProductModel2(
     variations: [],
     name: "",
     image: productDemoImg4,
@@ -53,7 +77,7 @@ List<ProductModel> demoPopularProducts = [
     pId: "",
     mrp: 800,
   ),
-  ProductModel(
+  ProductModel2(
     variations: [],
     name: "",
     image: productDemoImg5,
@@ -68,7 +92,7 @@ List<ProductModel> demoPopularProducts = [
     priceAfetDiscount: 390.36,
     dicountpercent: 40,
   ),
-  ProductModel(
+  ProductModel2(
     name: "",
     image: productDemoImg6,
     highlightHeading: "Green Poplin Ruched Front",
@@ -83,7 +107,7 @@ List<ProductModel> demoPopularProducts = [
     priceAfetDiscount: 1200.8,
     dicountpercent: 5,
   ),
-  ProductModel(
+  ProductModel2(
     name: "",
     image: "https://i.imgur.com/tXyOMMG.png",
     highlightHeading: "Green Poplin Ruched Front",
@@ -98,7 +122,7 @@ List<ProductModel> demoPopularProducts = [
     priceAfetDiscount: 390.36,
     dicountpercent: 40,
   ),
-  ProductModel(
+  ProductModel2(
     name: "",
     image: "https://i.imgur.com/h2LqppX.png",
     highlightHeading: "white satin corset top",
